@@ -12,7 +12,6 @@
 - [Функциональность](#функциональность)
 - [API](#api)
 - [Модель данных](#модель-данных)
-- [Быстрый старт](#быстрый-старт)
 
 ## Архитектура
 
@@ -23,7 +22,7 @@
 └──────────────────────┘                      └───────────────────────┘                    └─────────────────┘
 
                     ┌──────────────────────────────┐
-                    │  AddMenuPositionImagesCript   │  — консольная утилита для массовой
+                    │  AddMenuPositionImagesScript  │  — консольная утилита для массовой
                     │  (.NET console app)           │    загрузки фотографий блюд в БД через API
                     └──────────────────────────────┘
 ```
@@ -33,7 +32,6 @@
 **Backend**
 - ASP.NET Core Web API (.NET 8)
 - Entity Framework Core 8 + SQL Server провайдер
-- Swagger / Swashbuckle (документация API)
 - MS SQL Server 2022 (в Docker)
 
 **Frontend**
@@ -58,7 +56,7 @@
 │       ├── Model/                # Репозитории и сценарии (бизнес-логика)
 │       └── Rdb/                  # EF Core: сущности, миграции, хранилища
 │
-├── AddMenuPositionImagesCript/   # Консольная утилита загрузки фото блюд в БД
+├── AddMenuPositionImagesScript/  # Консольная утилита загрузки фото блюд в БД
 │
 ├── docker/
 │   └── docker-compose.yml        # Поднятие MS SQL Server в контейнере
@@ -76,7 +74,7 @@
 
 ## API
 
-Backend поднимается со Swagger UI для интерактивной документации. Основные группы эндпоинтов:
+Основные группы эндпоинтов:
 
 | Контроллер | Маршрут | Описание |
 |---|---|---|
@@ -103,39 +101,6 @@ MenuCategory ──1─▶─N── MenuPosition ──1─▶─N── MenuPo
 - **Order** — заказ (дата, телефон клиента)
 - **MenuPositionOrder** — связь заказа с блюдами и их количеством
 
-## Быстрый старт
-
-### 1. Поднять базу данных
-
-```bash
-cd docker
-docker compose up -d
-```
-
-Поднимет MS SQL Server 2022 на `localhost:1433` (логин `sa`, пароль указан в `docker-compose.yml`).
-
-### 2. Запустить backend
-
-```bash
-cd RestaurantDbManager/RestaurantDbManager
-dotnet ef database update   # применить миграции
-dotnet run
-```
-
-Строка подключения к БД задаётся в `appsettings.json`. Swagger UI будет доступен по адресу, который выведет `dotnet run` (обычно `https://localhost:{port}/swagger`).
-
-### 3. Открыть frontend
-
-Открыть `restaurant web-site/index/index.html` в браузере (или раздать папку через любой статический веб-сервер).
-
-### 4. (опционально) Загрузить фотографии блюд
-
-```bash
-cd AddMenuPositionImagesCript/TestApp
-# положить изображения в папку images/ (имена файлов — числа, соответствующие ID блюда)
-dotnet run
-```
-
 ---
 
-> Дипломный проект выполнен в рамках обучения в «Академии топ обучение».
+> Дипломный проект выполнен в рамках обучения в «Академия ТОП».
