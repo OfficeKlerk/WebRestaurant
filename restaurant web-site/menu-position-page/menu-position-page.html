@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu-position-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title id="title"></title>
+</head>
+<body>
+    <script src="menu-position-page.js"></script>
+
+    <!-- основная часть -->
+    <main>
+        <!-- листающаяся галерея фотографий -->
+        <div id="slider-wrapper" class="slider-wrapper">
+            <div class="slider">
+                <!-- сюда динамично добавляются элементы-->
+            </div>
+        </div>
+
+        <!-- информация о блюде -->
+        <div id="menu-position-info" class="menu-position-info">
+            <!-- верхнее меню -->
+            <nav>
+                <a href="#" onclick="goBack()">
+                    <span><i class="fas fa-circle-arrow-left"></i></span>
+                </a>
+                <a href="../cart-page/cart-page.html" onclick="saveCurrentPage('Cart')">
+                    <span><i class="fas fa-shopping-basket"></i></span>
+                </a>
+            </nav>
+
+            <!-- текстовая информация -->
+            <div id="main-info-content" class="main-info-content">
+                <div class="menu-position-name"></div>
+                <div class="menu-position-description"></div>
+                <div class="menu-position-weight"></div>
+            </div>
+
+            <!-- цена с кнопкой -->
+            <div id="price-with-button" class="price-with-button">
+                <div class="menu-position-price"></div>
+                <div class="count-bar">
+                    <span class="minus" onclick="decreaseCount()">
+                        &#8722;
+                        <div class="circle"></div>
+                    </span>
+                    <span id="count" class="count">1</span>
+                    <span class="plus" onclick="increaseCount()">
+                        +
+                        <div class="circle"></div>
+                    </span>
+                </div>
+                <div class="add-to-cart-button">В корзину</div>
+            </div>
+    </main>
+    
+    <!-- футер -->
+    <footer>
+        <div class="logo">
+            <img src="images/restaurant-logo.png" alt="logo">
+            <div class="restaurant-name">Тбилисский дворик</div>
+        </div>
+
+        <div class="author">Made by Leon Slobodyan</div>
+    </footer>
+</body>
+</html>

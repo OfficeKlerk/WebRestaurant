@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    position: relative;
+    height: 200px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 73px;
+    padding: 0px 100px;
+    margin-bottom: 100px;
+}
+
+footer{
+    width: 95.85%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    gap: 100px;
+}
+
+.side-button{
+    position: absolute;
+    top: 30px;
+    min-width: 35px;
+    height: 80.5px;
+    z-index: 1;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-button a{
+    display: flex;
+    color: white;
+    position: relative;
+    width: 90%;
+}
+
+a span:hover{
+    cursor: pointer;
+}
+
+.side-button a:hover{
+    cursor: default;
+}
+
+.side-button-text{
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side-button-text:hover{
+    text-decoration: underline;
+}
+
+#left-button{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    left: 0;
+    justify-content: end;
+    padding-left: 2px;
+}
+
+#right-button{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    right: 0;
+    padding-right: 4px;
+}
+
+#right-button .side-button-icon{
+    text-align: end;
+}
+
+#right-button a{
+   justify-content: end;
+}
+
+#right-button span i{
+    font-size: 24px;
+}
+
+#left-button:hover{
+    min-width: 135px;
+}
+
+#right-button:hover{
+    min-width: 155px;
+    padding-right: 9px;
+}
+
+#left-text{
+    left: 36px;
+}
+
+#right-text{
+    right: 40px;
+}
+
+span i{
+    font-size: 25px;
+}
+
+.menu-category-header{
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+.menu-position{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow ease 0.2s;
+}
+
+main a{
+    text-decoration: none;
+}
+
+.menu-position:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.menu-position-image{
+    height: 210px;
+}
+
+
+.menu-position-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: -1px;
+    border-bottom: 2px solid black;
+}
+
+.menu-position-info {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    padding: 20px; 
+    font-size: 14px; 
+    background-color: rgb(243, 240, 240); 
+    font-weight: bold;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.name-with-weight{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-position-name {
+    font-style: italic;
+    font-size: 18px;
+    color: #333; 
+}
+
+.menu-position-weight {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: "Inter";
+}
+
+.menu-position-price {
+    font-family: "Inter";
+    font-size: 18px; 
+    font-weight: bold;
+    color: #333;
+}
+
+.price-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.price-with-button button {
+    background-color: #626161;
+    color: white; 
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price-with-button button:hover {
+    background-color: #333;
+}
+
+.price-with-button button:active{
+    transform: scale(1.03);
+}
+
+.logo{
+    height: 60%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-style: normal;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+footer .logo img{
+    object-fit: cover;
+    height: 100%;
+    display: block;
+}
+
+.author{
+    text-align: end;
+    padding-right: 80px;
+}

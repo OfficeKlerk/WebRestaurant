@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Тбилисский дворик</title>
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <!--черная шапка страницы-->
+    <header>
+        <nav>
+            <a href="#menu"><span>Меню</span></a>
+            <a href="#restaurant-photos"><span>Фотографии</span></a>
+            <div class="logo">
+                <img src="images/header-images/restaurant-logo.png" alt="logo">
+            </div>
+            <a href="#contacts"><span>Контакты</span></a>
+            <a href="../cart-page/cart-page.html" onclick="saveCurrentPage('Cart')"><span>Корзина</span></a>
+        </nav>
+        <div class="restaurant-preview">
+            <div class="slogan">
+                <h1>Тбилисский дворик</h1>
+                <h3>Ресторан грузинской кухни</h3>
+            </div>
+            <div class="restaurant-view">
+                <img src="images/header-images/restaurant-view.webp" alt="view">
+            </div> 
+        </div>
+    </header>
+
+    <!--основная часть страницы-->
+    <main>
+        <!-- основное меню -->
+        <div id="menu" class="main-menu">
+            <div class="menu-header">Наше меню</div>
+
+            <div id="menu-sections" class="menu-sections">
+                <!-- сюда динамично добавляются элементы -->
+            </div>
+        </div>
+
+        <!-- фотографии ресторана -->
+        <div id="restaurant-photos" class="restaurant-photos">
+            <div class="restaurant-photos-header">Наши заведения</div>
+            <div class="restaurant-photos-main">
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 1.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 2.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 3.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 4.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 5.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 6.webp" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 7.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 8.jpg" alt="restaurant-photo">
+                </div>
+
+                <div class="restaurant-photo">
+                    <img src="images/restaurant-photos/restaurant-photo 9.jpeg" alt="restaurant-photo">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- нижняя часть страницы -->
+    <footer>
+        <div id="contacts" class="contacts-info">
+            <div class="contacts-info-header">Как нас найти</div>
+            <div class="city-info">Г. Барнаул</div>
+            <p>
+                Улица Автотранспортная, 55Б <br>
+                Проспект Красноармеский, 135А <br>
+                +7-905-082-25-16
+            </p>
+        </div>
+        <div class="creator-info">
+            Автор сайта: Слободян Леонтий Андреевич
+        </div>
+    </footer>
+</body>
+</html>

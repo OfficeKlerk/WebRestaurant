@@ -1,0 +1,399 @@
+html {
+  scroll-behavior: smooth; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+}
+
+header{
+    background-color: black;
+    height: 860px;
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 550px;
+    color: white;
+    text-align: center;
+}
+
+
+nav{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    width: 75%;
+    height: 36px;
+}
+
+nav a{
+    text-align: center;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1, h3{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-style: normal;
+}
+
+.restaurant-preview{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 673px;
+    width: 100%;
+    padding-top: 60px;
+    gap: 60px;
+}
+
+.logo{
+    padding-top: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-left: 5px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.logo img{
+    width: 109px;
+    height: 116px;
+    display: block;
+}
+
+.restaurant-view{
+    height: 500px;
+    width: 60%;
+}
+
+.restaurant-view img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.dumplings-sets{
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.dumplings-sets-header, .menu-header, 
+.restaurant-photos-header, .contacts-info-header{
+    padding-top: 59px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.dumpling-positions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 81%;
+    gap: 40px;
+    margin-bottom: 135px;
+}
+
+.dumpling-position{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    gap: 2px;
+}
+
+.dumpling-position img{
+    object-fit: cover;
+    width: 100%;
+    height: 245px;
+    border: 2px solid black;
+}
+
+.position-name{
+    margin-top: 23px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.position-info{
+    color: rgb(55, 55, 55);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.price-info{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.position-description{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.position-info ul{
+    margin-top: 0;
+    padding-left: 20px;
+    padding-top: 0;
+}
+
+.weight-info{
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.add-to-cart-button{
+    font-family: Georgia, sans-serif;
+    border: none;
+    background-color: rgb(218, 34, 24);
+    color: white;
+    height: 34px;
+    width: 160px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.5);
+}
+
+.add-to-cart-button:hover{
+    background-color: rgb(180, 27, 19);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.main-menu{
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.menu-sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 73px;
+    width: 100%;
+}
+
+.menu-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 344px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-section a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-section img{
+    height: 100%;
+    width: 227px;
+    object-fit: cover;
+    border-radius: 50px;
+    filter: blur(1px);
+    box-shadow: 0 0 5px;
+}
+
+.menu-section-button{
+    font-family: Georgia, sans-serif;
+    border: none;
+    position: absolute;
+    width: 235px;
+    height: 100px;
+    background-color: white;
+    top: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.menu-section-button:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    transform: scale(1.01);
+}
+
+.menu-section-button span{
+    display: block;
+    padding: 15px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.restaurant-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+}
+
+.restaurant-photos-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 80px;
+}
+
+.restaurant-photo{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.restaurant-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 5px;
+}
+
+.contacts-info{
+    margin-bottom: 130px;
+}
+.contacts-info-header{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.city-info{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.contacts-info p{
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.creator-info{
+    font-size: 14px;
+}
+
+@media(max-width:1320px){
+    nav{
+        font-size: 20px;
+    }
+    .dumpling-positions{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 1200px){
+    .restaurant-photos-main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 1082px){
+    nav{
+        font-size: 18px;
+    }
+    .menu-sections{
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-section-button span{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 980px){
+    .restaurant-preview{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 40px;
+    }
+    .restaurant-view{
+        height: 430px;
+        width: 70%;
+    }
+    .dumpling-positions{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 910px){
+    nav{
+        font-size: 16px;
+    }
+}
+@media(max-width: 750px){
+    nav{
+        font-size: 15px;
+    }
+    .restaurant-photos-main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 680px){
+    .restaurant-preview{
+        gap: 0;
+    }
+    .dumpling-positions, .menu-sections{
+        grid-template-columns: 1fr;
+    }
+    .menu-header, .restaurant-photos-header{
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 580px){
+    nav{
+        font-size: 14px;
+    }
+}
